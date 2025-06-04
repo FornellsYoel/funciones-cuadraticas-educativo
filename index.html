@@ -156,6 +156,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+            margin: 0.5rem;
         }
 
         .btn:hover {
@@ -516,7 +517,6 @@
                 
                 <button class="btn" onclick="solveBasketballExample()">⚡ Resolver Ejemplo</button>
                 <div id="basketballSolution" style="display: none; margin-top: 1rem; padding: 1rem; background: #f0f8ff; border-radius: 10px;">
-                    <!-- La solución se mostrará aquí -->
                 </div>
             </div>
 
@@ -526,7 +526,6 @@
                 
                 <button class="btn" onclick="solveProfitExample()">💸 Calcular Beneficio Máximo</button>
                 <div id="profitSolution" style="display: none; margin-top: 1rem; padding: 1rem; background: #f0fff0; border-radius: 10px;">
-                    <!-- La solución se mostrará aquí -->
                 </div>
             </div>
         </section>
@@ -545,7 +544,7 @@
                 
                 <div class="card pulse">
                     <h3>📡 Comunicaciones</h3>
-                    <p>Las antparabólicas concentran señales en un punto focal usando propiedades de parábolas.</p>
+                    <p>Las antenas parabólicas concentran señales en un punto focal usando propiedades de parábolas.</p>
                     <div class="interactive-box" style="margin-top: 1rem;">
                         <p><strong>Principio:</strong> Todas las ondas paralelas se reflejan hacia el foco.</p>
                     </div>
@@ -715,4 +714,7 @@
             drawVertex(centerX, centerY, scale);
         }
 
-        // Dibujar ejes de coor
+        // Dibujar ejes de coordenadas
+        function drawAxes(centerX, centerY, scale) {
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 
